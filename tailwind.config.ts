@@ -7,10 +7,16 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         background: "var(--background)",
+        whitesmoke: "#f7f6f6",
         foreground: "var(--foreground)",
+        text: "#1e293b",
+        highlight: "#475569",
       },
     },
   },
