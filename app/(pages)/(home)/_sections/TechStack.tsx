@@ -4,6 +4,13 @@ import Image from 'next/image';
 const TechStack = () => {
     return (
         <section className="W-[4.8rem] bg-whitesmoke">
+            <Image
+                src="/pictures/side_gradient.webp"
+                width={500}
+                height={145}
+                className="absolute left-0 z-20 opacity-60"
+                alt="tailwind effect"
+            />
             <div className="container px-[6rem] pb-[5.1rem] pt-[4.8rem]">
                 <h2 className="text-center text-[3rem] font-light leading-[3.6rem] text-text">
                     TECH STACK
@@ -11,7 +18,7 @@ const TechStack = () => {
                 <div className="mx-auto mb-[3rem] mt-[0.8rem] grid w-full grid-cols-4 justify-center gap-[1rem] border-b-[0.1rem] border-gray-400/40 pb-[2rem]">
                     {techstack.map((tech) => (
                         <figure key={tech.id}>
-                            <div className="mx-auto w-[8rem] rounded-xl border-[0.1rem] border-gray-300 bg-gradient-to-r from-gray-200 to-stone-100 p-[0.5rem] shadow-sm">
+                            <div className="relative z-30 mx-auto w-[8rem] rounded-xl border-[0.1rem] border-gray-300 bg-gradient-to-r from-slate-200 to-purple-100 p-[0.5rem] shadow-sm transition ease-in-out hover:-translate-y-1 hover:scale-95 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-400">
                                 <Image
                                     width={500}
                                     height={500}
@@ -32,7 +39,7 @@ const TechStack = () => {
                 <div className="mx-auto mt-[0.8rem] grid w-full grid-cols-5 justify-center gap-[1rem]">
                     {tools.map((tool) => (
                         <figure key={tool.id}>
-                            <div className="delay-95 mx-auto h-[6rem] w-[6rem] rounded-xl border-[0.1rem] border-gray-300 bg-white p-[1rem] shadow-sm transition ease-in-out hover:-translate-y-1 hover:scale-95">
+                            <div className="delay-95 relative z-30 mx-auto h-[6rem] w-[6rem] rounded-xl border-[0.1rem] border-gray-300 bg-white p-[1rem] shadow-sm transition ease-in-out hover:-translate-y-1 hover:scale-95">
                                 <Image
                                     width={500}
                                     height={500}

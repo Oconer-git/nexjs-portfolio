@@ -61,16 +61,11 @@ export const techstack = [
     },
     {
         id: 12,
-        name: 'Bootstrap',
-        imageSrc: '/svgs/bootstrap.svg'
-    },
-    {
-        id: 13,
         name: 'Postgresql',
         imageSrc: '/svgs/postgresql.svg'
     },
     {
-        id: 14,
+        id: 13,
         name: 'Wordpress',
         imageSrc: '/svgs/wordpress.svg'
     }
@@ -79,21 +74,27 @@ export const techstack = [
 // github, radixui, shadcn, axios, supabase, figma, figma, pixso, postman, prisma, react tanstack, vercel,
 export const tools = [
     { id: 1, name: 'Github', imageSrc: 'svgs/others/github.svg' },
-    { id: 2, name: 'Radix UI', imageSrc: 'svgs/others/radixui.svg' },
-    { id: 3, name: 'Shadcn', imageSrc: 'svgs/others/shadcn.svg' },
-    { id: 4, name: 'Axios', imageSrc: 'svgs/others/axios.svg' },
-    { id: 5, name: 'Postman', imageSrc: 'svgs/others/postman.svg' },
-    { id: 6, name: 'Supabase', imageSrc: 'svgs/others/supabase.svg' },
-    { id: 7, name: 'Figma', imageSrc: 'svgs/others/figma.svg' },
-    { id: 8, name: 'Pixso', imageSrc: 'svgs/others/pixso.svg' },
+    { id: 2, name: 'Bootstrap', imageSrc: '/svgs/others/bootstrap.svg' },
+    { id: 3, name: 'Radix UI', imageSrc: 'svgs/others/radixui.svg' },
+    { id: 4, name: 'Shadcn', imageSrc: 'svgs/others/shadcn.svg' },
+    { id: 5, name: 'Axios', imageSrc: 'svgs/others/axios.svg' },
+    { id: 6, name: 'Postman', imageSrc: 'svgs/others/postman.svg' },
+    { id: 7, name: 'Supabase', imageSrc: 'svgs/others/supabase.svg' },
+    { id: 8, name: 'Figma', imageSrc: 'svgs/others/figma.svg' },
+    { id: 9, name: 'Pixso', imageSrc: 'svgs/others/pixso.svg' },
     {
-        id: 9,
+        id: 10,
         name: 'Tanstack Query',
         imageSrc: 'svgs/others/react-tanstack.svg'
     },
     {
-        id: 10,
+        id: 11,
         name: 'Vercel',
         imageSrc: 'svgs/others/vercel.svg'
+    },
+    {
+        id: 12,
+        name: 'Hostinger',
+        imageSrc: 'svgs/others/hostinger.svg'
     }
 ];
