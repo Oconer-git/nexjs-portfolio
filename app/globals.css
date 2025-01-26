@@ -1,8 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Roboto:wght@400&family=Special+Elite:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-	font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px */
-	scroll-behavior: smooth;
+    font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-bungee: 'Bungee Shade', serif;
+}
+
+/* scroll style ---start--- */
+::-webkit-scrollbar {
+    @apply w-[0.8rem];
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-[#e7e4e4];
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-400;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-blue-500;
+}
+/* scroll style ---end--- */
+
+.box {
+    @apply border-2 border-red-400;
 }

@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { FaCampground, FaUniversity } from 'react-icons/fa';
+import Heading from '../_components/Heading';
 
 const AboutMe = () => {
     return (
-        <section>
-            <div className="container flex flex-col gap-[1.6rem] px-[3.2rem] pb-[4.8rem] pt-[4.4rem]">
+        <section className="border-y-[0.1rem] from-gray-50/50">
+            <div className="container flex flex-col gap-[1.6rem] px-[5rem] py-[4.8rem]">
                 <About />
                 <EducationHistory />
             </div>
@@ -14,15 +15,14 @@ const AboutMe = () => {
 
 const About = () => {
     return (
-        <div className="mx-auto w-[35.8rem]">
-            <h2 className="text-center text-[3rem] font-light leading-[3.6rem] text-text">
-                About me
-            </h2>
+        <div className="mx-auto w-11/12">
+            <Heading>About Me</Heading>
             <p className="mt-[0.1rem] text-center text-[1.6rem] leading-[2.4rem] text-text">
-                Hey there! Think of me as a coding chameleon. I adapt and blend
-                into whatever technology, I’m working with—Laravel, CodeIgniter,
-                React, Next.js or just plain PHP. I’m constantly evolving,
-                picking up new colors (or skills) to stay in the game ;)
+                Hey there! Think of me as a coding chameleon. I enjoy coding
+                into whatever technology, I’m working with—
+                <i>Laravel, CodeIgniter, React, Next.js</i> or just plain{' '}
+                <i>PHP</i>. I’m constantly evolving, picking up new colors or
+                (skills) to stay in the game ;)
             </p>
         </div>
     );
@@ -49,7 +49,7 @@ const EducationHistory = () => {
     ];
 
     return (
-        <div className="mx-auto my-[0.8rem] flex w-[42.9rem] flex-row justify-center gap-[1.6rem]">
+        <div className="mx-auto my-[0.8rem] flex w-full flex-row justify-center gap-[1.6rem]">
             {institutions.map((institution) => (
                 <div className="w-[19.6rem]" key={institution.id}>
                     <div className="flex flex-row items-center gap-[0.6rem]">
@@ -59,7 +59,7 @@ const EducationHistory = () => {
                         </h3>
                     </div>
                     <section className="pl-[3.5rem]">
-                        <h4 className="text-[1.6rem] font-[650] leading-[2.4rem] text-highlight/90">
+                        <h4 className="text-[1.6rem] font-[600] leading-[2.4rem] text-gray-700">
                             {institution.name}
                         </h4>
                         <Link

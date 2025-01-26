@@ -1,14 +1,20 @@
 import AboutMe from './_sections/AboutMe';
+import GetInTouch from './_sections/GetInTouch';
 import Hero from './_sections/Hero';
+import Projects from './_sections/Projects';
 import TechStack from './_sections/TechStack';
+import WhatIBring from './_sections/WhatIBring';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Hero />
             <AboutMe />
             <TechStack />
-        </div>
+            <Projects />
+            <WhatIBring />
+            <GetInTouch />
+        </>
     );
 };
 
