@@ -3,18 +3,20 @@ import Image from 'next/image';
 
 const Hero = () => {
     return (
-        <section className="bg-white">
-            <Image
-                src="/pictures/tailwind_effect.png"
-                width={500}
-                height={145}
-                className="absolute top-0 z-40 w-full md:opacity-90"
-                alt="tailwind effect"
-            />
-            <div className="container pb-[4.8rem] pt-[14.8rem]">
-                <Profile />
-                <ProfileDescription />
-                <ScrollDown />
+        <section className="bg-hero bg-cover">
+            <div className="relative bg-gradient-to-b from-white via-white to-white/50">
+                <Image
+                    src="/pictures/tailwind_effect.png"
+                    width={500}
+                    height={145}
+                    className="absolute top-0 z-40 w-full md:opacity-90"
+                    alt="tailwind effect"
+                />
+                <div className="container flex h-screen w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[14.8rem] xl:h-[64rem]">
+                    <Profile />
+                    <ProfileDescription />
+                    <ScrollDown />
+                </div>
             </div>
         </section>
     );
@@ -27,11 +29,11 @@ const Profile = () => {
                 src="/pictures/donell_transparent.png"
                 width={499}
                 height={499}
-                className="relative z-40 mx-auto h-[13.7rem] w-[13.7rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm"
+                className="relative z-40 mx-auto h-[13.7rem] w-[13.7rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm lg:h-[15rem] lg:w-[15rem]"
                 alt="profile"
             />
             <h1
-                className={`${merienda.className} mt-[2rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 bg-clip-text text-center text-[4.8rem] font-extrabold leading-[4.8rem] text-highlight text-transparent`}
+                className={`${merienda.className} mt-[2rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 bg-clip-text text-center text-[4.4rem]/[4.4rem] font-extrabold text-highlight text-transparent sm:text-[5rem]/[5rem] lg:text-[5.2rem]/[5.2rem] xl:text-[5.5rem]`}
             >
                 Hi, I&apos;m Donell Oconer.
             </h1>
@@ -42,7 +44,7 @@ const Profile = () => {
 const ProfileDescription = () => {
     return (
         <div className="mt-[1.5rem] flex flex-row items-center justify-center gap-[0.3rem]">
-            <p className="text-[1.4rem] leading-[2.4rem] text-gray-500">
+            <p className="text-[1.3rem]/[2.4rem] text-slate-800 drop-shadow-sm sm:text-[1.7rem]/[2.7rem] lg:text-[1.8rem]/[2.8rem] lg:text-slate-700/90 xl:text-[1.95rem]">
                 Aspiring junior web dev based in Philippines
             </p>
             <Image
@@ -57,15 +59,22 @@ const ProfileDescription = () => {
 
 const ScrollDown = () => {
     return (
-        <div className="mt-[5.7rem] flex flex-col items-center">
-            <p className="text-[1.4rem] leading-[2rem] text-[#6b7280]">
+        <div className="mt-auto flex flex-col items-center">
+            <p className="text-[1.4rem] leading-[2rem] text-[#4d4a4a] sm:text-[1.8rem]">
                 Scroll down
             </p>
             <Image
                 src="/gifs/scroll-down.gif"
                 width={10}
                 height={10}
-                className="h-[2rem] w-[2rem]"
+                className="h-[2rem] w-[2rem] sm:h-[2.4rem] sm:w-[2.4rem]"
+                alt="down"
+            />
+            <Image
+                src="/gifs/scroll-down.gif"
+                width={10}
+                height={10}
+                className="h-[2rem] w-[2rem] sm:h-[2.4rem] sm:w-[2.4rem]"
                 alt="down"
             />
         </div>

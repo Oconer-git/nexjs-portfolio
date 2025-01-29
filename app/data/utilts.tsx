@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 export interface Tech {
     id: number;
     name: string;
-    imageSrc: string;
+    imageSrc?: string;
 }
 
 export interface Project {
@@ -17,6 +17,7 @@ export interface Project {
     demoLink: string;
     mobileImageSrc: string;
     desktopImageSrc: string;
+    techUsed?: Tech[];
 }
 
 export interface Skill {
@@ -38,7 +39,7 @@ export const skills: Skill[] = [
                 src="/pictures/mock_ups/front-end.png"
                 width={524}
                 height={316}
-                className="relative bottom-[4rem] right-[5rem] w-full"
+                className="relative bottom-[6rem] right-[5rem] w-full md:bottom-[10rem] lg:bottom-[8rem]"
                 alt="front-end prop"
             />
         ),
@@ -70,7 +71,7 @@ export const skills: Skill[] = [
                 src="/pictures/mock_ups/mobile-first-resized.png"
                 width={524}
                 height={316}
-                className="relative -bottom-[0.4rem] right-[2rem] w-full"
+                className="relative -bottom-[0.4rem] right-[2rem] w-10/12 md:w-9/12"
                 alt="Mobile First Web Design prop"
             />
         ),
@@ -78,6 +79,22 @@ export const skills: Skill[] = [
     },
     {
         id: 4,
+        name: 'Unit Testing',
+        description:
+            'Familiar with unit testing with Jest and React Testing Library to ensure component reliability. Improved UX with error handling, efficient data fetching, skeleton loaders, and dynamic user states.',
+        image: (
+            <Image
+                src="/pictures/mock_ups/unit-testing.webp"
+                width={524}
+                height={316}
+                className="relative -bottom-[0.4rem] left-[7rem] w-10/12 md:w-9/12"
+                alt="Unit Testing Web Design prop"
+            />
+        ),
+        bgClassname: 'bg-wallpaper9'
+    },
+    {
+        id: 5,
         name: 'Relational Database Design',
         description:
             'Adept on relational database design, including creating efficient schemas, normalizing data to minimize redundancy.',
@@ -93,7 +110,7 @@ export const skills: Skill[] = [
         bgClassname: 'bg-wallpaper2'
     },
     {
-        id: 5,
+        id: 6,
         name: 'Multimedia Editing',
         description:
             ' Well-versed in multimedia editing, including editing photos and videos, enhancing visuals, and creating engaging content for online platforms.',
@@ -109,7 +126,7 @@ export const skills: Skill[] = [
         bgClassname: 'bg-wallpaper3'
     },
     {
-        id: 6,
+        id: 7,
         name: 'Content Management',
         description:
             'Knowledgeable in using content management systems (CMS) to help publish and update content in a way that’s clear and engaging for the audience.',
@@ -137,7 +154,33 @@ export const projects: Project[] = [
         siteLink: 'https://issue-tracker-bug.vercel.app/home/dashboard',
         demoLink: '#',
         mobileImageSrc: '/pictures/screenshots/issueTracker/1.png',
-        desktopImageSrc: '/pictures/screenshots/issueTracker/2.png'
+        desktopImageSrc: '/pictures/screenshots/issueTracker/2.png',
+        techUsed: [
+            {
+                id: 1,
+                name: 'Next.js'
+            },
+            {
+                id: 2,
+                name: 'Typescript'
+            },
+            {
+                id: 3,
+                name: 'Prisma'
+            },
+            {
+                id: 4,
+                name: 'RadixUI'
+            },
+            {
+                id: 5,
+                name: 'Axios'
+            },
+            {
+                id: 6,
+                name: 'Postgresql'
+            }
+        ]
     },
     {
         id: 2,
@@ -149,7 +192,29 @@ export const projects: Project[] = [
         siteLink: 'https://ghub.fellowdevs.io/',
         demoLink: '#',
         mobileImageSrc: '/pictures/screenshots/ghub/1.png',
-        desktopImageSrc: '/pictures/screenshots/ghub/2.png'
+        desktopImageSrc: '/pictures/screenshots/ghub/2.png',
+        techUsed: [
+            {
+                id: 1,
+                name: 'React'
+            },
+            {
+                id: 2,
+                name: 'Typescript'
+            },
+            {
+                id: 3,
+                name: 'Tanstack'
+            },
+            {
+                id: 4,
+                name: 'TailwindCSS'
+            },
+            {
+                id: 5,
+                name: 'ChakraUI'
+            }
+        ]
     },
     {
         id: 3,
@@ -161,7 +226,13 @@ export const projects: Project[] = [
         siteLink: 'https://hub.fellowdevs.io/',
         demoLink: '#',
         mobileImageSrc: '/pictures/screenshots/fellowDevsHub/1.png',
-        desktopImageSrc: '/pictures/screenshots/fellowDevsHub/2.png'
+        desktopImageSrc: '/pictures/screenshots/fellowDevsHub/2.png',
+        techUsed: [
+            {
+                id: 1,
+                name: 'Wordpress'
+            }
+        ]
     },
     {
         id: 4,
@@ -173,7 +244,37 @@ export const projects: Project[] = [
         siteLink: 'https://fellowdevs.io/',
         demoLink: 'https://youtu.be/fmh7Ruk6yRU',
         mobileImageSrc: '/pictures/screenshots/fellowDevs/1.png',
-        desktopImageSrc: '/pictures/screenshots/fellowDevs/2.png'
+        desktopImageSrc: '/pictures/screenshots/fellowDevs/2.png',
+        techUsed: [
+            {
+                id: 1,
+                name: 'Laravel'
+            },
+            {
+                id: 2,
+                name: 'PHP'
+            },
+            {
+                id: 3,
+                name: 'Livewire'
+            },
+            {
+                id: 4,
+                name: 'JS'
+            },
+            {
+                id: 5,
+                name: 'Jquery'
+            },
+            {
+                id: 6,
+                name: 'TailwindCSS'
+            },
+            {
+                id: 7,
+                name: 'MySql'
+            }
+        ]
     },
     {
         id: 5,
@@ -184,7 +285,29 @@ export const projects: Project[] = [
             'An e-commerce platform dedicated to offering a wide range of natural and organic foods, providing customers with a healthy and sustainable shopping experience. ',
         demoLink: 'https://youtu.be/fmh7Ruk6yRU',
         mobileImageSrc: '/pictures/screenshots/OrgoShop/1.png',
-        desktopImageSrc: '/pictures/screenshots/OrgoShop/2.png'
+        desktopImageSrc: '/pictures/screenshots/OrgoShop/2.png',
+        techUsed: [
+            {
+                id: 1,
+                name: 'CodeIgniter'
+            },
+            {
+                id: 2,
+                name: 'PHP'
+            },
+            {
+                id: 3,
+                name: 'JS'
+            },
+            {
+                id: 4,
+                name: 'Jquery'
+            },
+            {
+                id: 5,
+                name: 'Stripe'
+            }
+        ]
     }
 ];
 
@@ -226,51 +349,56 @@ export const techs: Tech[] = [
     },
     {
         id: 7,
+        name: 'Typescript',
+        imageSrc: '/svgs/typescript.svg'
+    },
+    {
+        id: 8,
         name: 'PHP',
         imageSrc: '/svgs/php.svg'
     },
     {
-        id: 8,
+        id: 9,
         name: 'MySQL',
         imageSrc: '/svgs/mysql.svg'
     },
     {
-        id: 9,
+        id: 10,
         name: 'Tailwind',
         imageSrc: '/svgs/tailwind.svg'
     },
     {
-        id: 10,
+        id: 11,
         name: 'Livewire',
         imageSrc: '/svgs/livewire.svg'
     },
     {
-        id: 11,
+        id: 12,
         name: 'Jquery',
         imageSrc: '/svgs/jquery.svg'
     },
     {
-        id: 12,
+        id: 13,
         name: 'Postgresql',
         imageSrc: '/svgs/postgresql.svg'
     },
     {
-        id: 13,
+        id: 14,
         name: 'Wordpress',
         imageSrc: '/svgs/wordpress.svg'
     }
 ];
 
 export const tools: Tech[] = [
-    { id: 1, name: 'Github', imageSrc: 'svgs/others/github.svg' },
+    { id: 1, name: 'Github', imageSrc: '/svgs/others/github.svg' },
     { id: 2, name: 'Bootstrap', imageSrc: '/svgs/others/bootstrap.svg' },
-    { id: 3, name: 'Radix UI', imageSrc: 'svgs/others/radixui.svg' },
-    { id: 4, name: 'Shadcn', imageSrc: 'svgs/others/shadcn.svg' },
-    { id: 5, name: 'Axios', imageSrc: 'svgs/others/axios.svg' },
-    { id: 6, name: 'Postman', imageSrc: 'svgs/others/postman.svg' },
-    { id: 7, name: 'Supabase', imageSrc: 'svgs/others/supabase.svg' },
-    { id: 8, name: 'Figma', imageSrc: 'svgs/others/figma.svg' },
-    { id: 9, name: 'Pixso', imageSrc: 'svgs/others/pixso.svg' },
+    { id: 3, name: 'Radix UI', imageSrc: '/svgs/others/radixui.svg' },
+    { id: 4, name: 'Shadcn', imageSrc: '/svgs/others/shadcn.svg' },
+    { id: 5, name: 'Axios', imageSrc: '/svgs/others/axios.svg' },
+    { id: 6, name: 'Postman', imageSrc: '/svgs/others/postman.svg' },
+    { id: 7, name: 'Supabase', imageSrc: '/svgs/others/supabase.svg' },
+    { id: 8, name: 'Figma', imageSrc: '/svgs/others/figma.svg' },
+    { id: 9, name: 'Pixso', imageSrc: '/svgs/others/pixso.svg' },
     {
         id: 10,
         name: 'Tanstack Query',
