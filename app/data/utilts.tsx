@@ -284,8 +284,8 @@ export const projects: Project[] = [
         description:
             'An e-commerce platform dedicated to offering a wide range of natural and organic foods, providing customers with a healthy and sustainable shopping experience. ',
         demoLink: 'https://youtu.be/fmh7Ruk6yRU',
-        mobileImageSrc: '/pictures/screenshots/OrgoShop/1.png',
-        desktopImageSrc: '/pictures/screenshots/OrgoShop/2.png',
+        mobileImageSrc: '/pictures/screenshots/orgoshop/1.png',
+        desktopImageSrc: '/pictures/screenshots/orgoshop/2.png',
         techUsed: [
             {
                 id: 1,
