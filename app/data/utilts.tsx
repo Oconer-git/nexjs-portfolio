@@ -152,7 +152,7 @@ export const projects: Project[] = [
         description:
             'A bug tracking application for efficient issue tracking and management, improving team collaboration and accelerating project delivery.',
         siteLink: 'https://issue-tracker-bug.vercel.app/home/dashboard',
-        demoLink: '#',
+        demoLink: 'https://youtu.be/hY5hYM2SYN4',
         mobileImageSrc: '/pictures/screenshots/issueTracker/1.png',
         desktopImageSrc: '/pictures/screenshots/issueTracker/2.png',
         techUsed: [
@@ -190,7 +190,7 @@ export const projects: Project[] = [
         description:
             'A game information platform that let’s you sort out games by selecting systems, genres, viewing ratings, and helps you decide which games to play.',
         siteLink: 'https://ghub.fellowdevs.io/',
-        demoLink: '#',
+        demoLink: 'https://youtu.be/Qc0JtJD5rTg',
         mobileImageSrc: '/pictures/screenshots/ghub/1.png',
         desktopImageSrc: '/pictures/screenshots/ghub/2.png',
         techUsed: [
@@ -224,7 +224,7 @@ export const projects: Project[] = [
         description:
             'An article platform dedicated to empowering aspiring developers, entrepreneurs, and professionals through contents.',
         siteLink: 'https://hub.fellowdevs.io/',
-        demoLink: '#',
+        demoLink: 'https://youtu.be/3fBeGSdkUIk',
         mobileImageSrc: '/pictures/screenshots/fellowDevsHub/1.png',
         desktopImageSrc: '/pictures/screenshots/fellowDevsHub/2.png',
         techUsed: [

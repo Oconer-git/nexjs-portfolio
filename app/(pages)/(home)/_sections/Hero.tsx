@@ -1,3 +1,5 @@
+import InitialFadeInContainer from '@/app/_motion/InitialFadeInContainer';
+import InitialPopUpContainer from '@/app/_motion/InitialPopUpContainer';
 import { merienda } from '@/app/fonts';
 import Image from 'next/image';
 
@@ -13,8 +15,10 @@ const Hero = () => {
                     alt="tailwind effect"
                 />
                 <div className="container flex h-screen w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[14.8rem] md:h-[64rem]">
-                    <Profile />
-                    <ProfileDescription />
+                    <InitialPopUpContainer>
+                        <Profile />
+                        <ProfileDescription />
+                    </InitialPopUpContainer>
                     <ScrollDown />
                 </div>
             </div>
@@ -59,24 +63,28 @@ const ProfileDescription = () => {
 
 const ScrollDown = () => {
     return (
-        <div className="mt-auto flex flex-col items-center">
-            <p className="text-[1.4rem] leading-[2rem] text-[#4d4a4a] sm:text-[1.8rem]">
-                Scroll down
-            </p>
-            <Image
-                src="/gifs/scroll-down.gif"
-                width={10}
-                height={10}
-                className="h-[2rem] w-[2rem] sm:h-[2.4rem] sm:w-[2.4rem]"
-                alt="down"
-            />
-            <Image
-                src="/gifs/scroll-down.gif"
-                width={10}
-                height={10}
-                className="h-[2rem] w-[2rem] sm:h-[2.4rem] sm:w-[2.4rem]"
-                alt="down"
-            />
+        <div className="mt-auto">
+            <InitialFadeInContainer>
+                <div className="flex flex-col items-center">
+                    <p className="text-[1.4rem] leading-[2rem] text-[#4d4a4a] sm:text-[1.8rem]">
+                        Scroll down
+                    </p>
+                    <Image
+                        src="/gifs/scroll-down.gif"
+                        width={10}
+                        height={10}
+                        className="h-[2rem] w-[2rem] sm:h-[2.4rem] sm:w-[2.4rem]"
+                        alt="down"
+                    />
+                    <Image
+                        src="/gifs/scroll-down.gif"
+                        width={10}
+                        height={10}
+                        className="h-[2rem] w-[2rem] sm:h-[2.4rem] sm:w-[2.4rem]"
+                        alt="down"
+                    />
+                </div>
+            </InitialFadeInContainer>
         </div>
     );
 };

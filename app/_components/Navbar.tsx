@@ -28,7 +28,7 @@ const Navbar = () => {
                     <Link
                         target="_blank"
                         href={resumeLink}
-                        className={`${scrolled ? 'bg-orange-600' : 'bg-gradient-to-br from-blue-600 to-cyan-600'} hidden flex-row items-center gap-[0.5rem] rounded-[0.5rem] p-[0.4rem] text-[1.2rem] !text-white drop-shadow-md hover:scale-95 hover:bg-orange-800 md:flex md:text-[1.4rem]`}
+                        className={`${scrolled ? 'bg-orange-600' : 'bg-gradient-to-br from-blue-600 to-cyan-600'} hidden flex-row items-center gap-[0.5rem] rounded-[0.5rem] p-[0.4rem] text-[1.2rem] text-gray-100 drop-shadow-md hover:scale-95 hover:bg-orange-800 md:flex md:text-[1.4rem]`}
                     >
                         <FaFileAlt className="h-[1.4rem] w-[1.4rem]" />
                         <p>resume</p>
