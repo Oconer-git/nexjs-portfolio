@@ -13,7 +13,7 @@ import { ContactForm } from './ContactForm';
 const ContactModal = () => {
     return (
         <Modal>
-            <ModalTrigger className="h-[3.5rem] w-fit rounded-[0.5rem] border-[0.1rem] border-slate-200 bg-slate-200 px-[2rem] py-[0.5rem] text-[1.2rem] text-gray-600 shadow-md hover:scale-95 sm:w-[16rem] sm:py-[1rem] sm:text-[1.5rem]">
+            <ModalTrigger className="h-[3.5rem] w-fit rounded-[0.5rem] border-[0.1rem] border-slate-200 bg-slate-200 px-[2rem] py-[0.5rem] text-[1rem] text-gray-600 shadow-md hover:scale-95 sm:w-[16rem] sm:py-[1rem] sm:text-[1.5rem]">
                 Send Message
             </ModalTrigger>
             <ModalContent className="scrollbar-modal max-h-[calc(100vh-3rem)] w-11/12 p-[3.1rem] sm:w-[47rem]">

@@ -12,7 +12,7 @@ const Hero = () => {
                     className="absolute top-0 z-40 w-full md:opacity-90"
                     alt="tailwind effect"
                 />
-                <div className="container flex h-screen w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[14.8rem] xl:h-[64rem]">
+                <div className="container flex h-screen w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[14.8rem] md:h-[64rem]">
                     <Profile />
                     <ProfileDescription />
                     <ScrollDown />
@@ -29,7 +29,7 @@ const Profile = () => {
                 src="/pictures/donell_transparent.png"
                 width={499}
                 height={499}
-                className="relative z-40 mx-auto h-[13.7rem] w-[13.7rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm lg:h-[15rem] lg:w-[15rem]"
+                className="relative z-40 mx-auto h-[13.7rem] w-[13.7rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm lg:h-[15rem] lg:w-[15rem] xl:h-[15.5rem] xl:w-[15.5rem]"
                 alt="profile"
             />
             <h1
