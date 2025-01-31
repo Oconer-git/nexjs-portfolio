@@ -11,10 +11,10 @@ const Hero = () => {
                     src="/pictures/tailwind_effect.png"
                     width={500}
                     height={145}
-                    className="absolute top-0 z-40 w-1/2 sm:w-full md:opacity-90"
+                    className="absolute top-0 z-40 w-full sm:w-full md:opacity-90"
                     alt="tailwind effect"
                 />
-                <div className="container flex h-screen w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[18rem] sm:pt-[14.8rem]">
+                <div className="container flex h-[66.3rem] w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[18rem] sm:pt-[14.8rem] md:h-[60rem] xl:h-[77.6rem]">
                     <InitialPopUpContainer>
                         <Profile />
                         <ProfileDescription />
@@ -33,7 +33,7 @@ const Profile = () => {
                 src="/pictures/donell_transparent.png"
                 width={499}
                 height={499}
-                className="relative z-40 mx-auto h-[10rem] w-[10rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm sm:h-[13.7rem] sm:w-[13.7rem] md:h-[15rem] md:w-[15rem] xl:h-[15.5rem] xl:w-[15.5rem]"
+                className="relative z-40 mx-auto h-[10rem] w-[10rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm sm:h-[14rem] sm:w-[14rem] md:h-[15rem] md:w-[15rem] xl:h-[15.5rem] xl:w-[15.5rem]"
                 alt="profile"
             />
             <h1
@@ -48,7 +48,7 @@ const Profile = () => {
 const ProfileDescription = () => {
     return (
         <div className="mt-[1.5rem] flex flex-row items-center justify-center gap-[0.3rem]">
-            <p className="text-[1.3rem]/[2.4rem] text-slate-800 drop-shadow-sm sm:text-[1.7rem]/[2.7rem] lg:text-[1.8rem]/[2.8rem] lg:text-slate-700/90 xl:text-[1.95rem]">
+            <p className="text-[1.5rem]/[2.5rem] text-slate-800 drop-shadow-sm sm:text-[1.7rem]/[2.7rem] lg:text-[1.8rem]/[2.8rem] lg:text-slate-700/90 xl:text-[1.95rem]">
                 Aspiring junior web dev based in Philippines
             </p>
             <Image
