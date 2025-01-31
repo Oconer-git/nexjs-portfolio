@@ -33,7 +33,7 @@ const Profile = () => {
                 src="/pictures/donell_transparent.png"
                 width={499}
                 height={499}
-                className="relative z-40 mx-auto h-[10rem] w-[10rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm sm:h-[14rem] sm:w-[14rem] md:h-[15rem] md:w-[15rem] xl:h-[15.5rem] xl:w-[15.5rem]"
+                className="relative z-40 mx-auto h-[14.2rem] w-[14.2rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm sm:h-[14rem] sm:w-[14rem] md:h-[15rem] md:w-[15rem] xl:h-[15.5rem] xl:w-[15.5rem]"
                 alt="profile"
             />
             <h1
@@ -47,14 +47,15 @@ const Profile = () => {
 
 const ProfileDescription = () => {
     return (
-        <div className="mt-[1.5rem] flex flex-row items-center justify-center gap-[0.3rem]">
-            <p className="text-[1.5rem]/[2.5rem] text-slate-800 drop-shadow-sm sm:text-[1.7rem]/[2.7rem] lg:text-[1.8rem]/[2.8rem] lg:text-slate-700/90 xl:text-[1.95rem]">
+        <div className="mx-auto mt-[2rem] inline-flex w-full items-center justify-center gap-2">
+            <p className="w-fit text-center text-[1.5rem]/[2.5rem] text-slate-800 drop-shadow-sm sm:text-[1.7rem]/[2.7rem] lg:text-[1.8rem]/[2.8rem] lg:text-slate-700/90 xl:text-[1.95rem]">
                 Aspiring junior web dev based in Philippines
             </p>
             <Image
                 src="/pictures/flag.png"
                 width={25}
                 height={25}
+                className="inline-block align-middle"
                 alt="Philippine flag"
             />
         </div>
