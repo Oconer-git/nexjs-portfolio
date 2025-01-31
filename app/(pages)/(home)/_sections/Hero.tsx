@@ -55,7 +55,7 @@ const ProfileDescription = () => {
                 src="/pictures/flag.png"
                 width={25}
                 height={25}
-                className="inline-block h-[1.4rem] w-[1.4rem] align-middle"
+                className="inline-block h-[1.4rem] w-[1.4rem] align-middle sm:h-[2rem] sm:w-[2rem] md:h-[2.4rem] md:w-[2.4rem]"
                 alt="Philippine flag"
             />
         </div>
