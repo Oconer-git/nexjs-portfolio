@@ -47,15 +47,15 @@ const Profile = () => {
 
 const ProfileDescription = () => {
     return (
-        <div className="mx-auto mt-[2rem] inline-flex w-full items-center justify-center gap-2">
-            <p className="w-fit text-center text-[1.5rem]/[2.5rem] text-slate-800 drop-shadow-sm sm:text-[1.7rem]/[2.7rem] lg:text-[1.8rem]/[2.8rem] lg:text-slate-700/90 xl:text-[1.95rem]">
+        <div className="mx-auto mt-[2rem] inline-flex w-full items-center justify-center gap-[0.2rem]">
+            <p className="w-fit text-center text-[1.3rem]/[2rem] text-slate-800/70 drop-shadow-sm sm:text-[1.7rem]/[2.7rem] lg:text-[1.8rem]/[2.8rem] lg:text-slate-700/90 xl:text-[1.95rem]">
                 Aspiring junior web dev based in Philippines
             </p>
             <Image
                 src="/pictures/flag.png"
                 width={25}
                 height={25}
-                className="inline-block align-middle"
+                className="inline-block h-[1.4rem] w-[1.4rem] align-middle"
                 alt="Philippine flag"
             />
         </div>
