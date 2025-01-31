@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useCallback } from 'react';
 import { FaFileAlt } from 'react-icons/fa';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { resumeLink } from '../data/resumeLink';
+import { resumeLink } from '../data/info';
 import {
     DropdownMenu,
     DropdownMenuContent,

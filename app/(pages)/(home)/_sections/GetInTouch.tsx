@@ -1,3 +1,4 @@
+import { email } from '@/app/data/info';
 import { AiOutlineDingtalk } from 'react-icons/ai';
 import { MdEmail } from 'react-icons/md';
 import { RiMessage2Fill } from 'react-icons/ri';
@@ -51,7 +52,7 @@ const SendMeAnEmail = () => {
             <p className="mb-[0.5rem] text-[1rem] font-[500] sm:text-[1.8rem] md:text-[2rem]">
                 Send me an email <MdEmail className="inline align-middle" />
             </p>
-            <CopyButton>oconer@fellowdevs.io</CopyButton>
+            <CopyButton>{email}</CopyButton>
             <p className="mt-[0.2rem] text-[1rem] sm:text-[1.1rem] md:text-[1.2rem]">
                 click to copy this email{' '}
                 <svg

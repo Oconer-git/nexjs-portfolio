@@ -26,7 +26,7 @@ const CopyButton = ({ children }: PropsWithChildren) => {
     return (
         <button
             onClick={handleCopy}
-            className="flex h-[3.5rem] w-fit flex-col items-center justify-center rounded-[0.5rem] border-[0.1rem] border-slate-200 bg-slate-200 px-[1rem] py-[0.5rem] text-[1rem] text-gray-600 shadow-md hover:scale-95 sm:w-[16rem] sm:py-[1rem] sm:text-[1.5rem]"
+            className="flex h-[2.5rem] w-fit flex-col items-center justify-center rounded-[0.5rem] border-[0.1rem] border-slate-200 bg-slate-200 px-[1rem] py-[0.1rem] text-[1rem] text-gray-600 shadow-md hover:scale-95 sm:h-[3.5rem] sm:py-[1rem] sm:text-[1.5rem]"
         >
             {children}
         </button>

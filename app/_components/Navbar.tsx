@@ -5,7 +5,7 @@ import { FaFileAlt } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa6';
 import useBookmark from '../_hooks/useBookmark';
 import useScroll from '../_hooks/useScroll';
-import { resumeLink } from '../data/resumeLink';
+import { resumeLink } from '../data/info';
 import HamburgerDropdown from './HambergerDropdown';
 const Navbar = () => {
     const scrolled = useScroll(50);
