@@ -14,7 +14,7 @@ const Hero = () => {
                     className="absolute top-0 z-40 w-full sm:w-full md:opacity-90"
                     alt="tailwind effect"
                 />
-                <div className="container flex h-[66.3rem] w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[18rem] sm:pt-[14.8rem] md:h-[60rem] xl:h-[77.6rem]">
+                <div className="container flex h-[66.3rem] w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[18rem] sm:pt-[14.8rem] md:h-[60rem] xl:h-[65rem]">
                     <InitialPopUpContainer>
                         <Profile />
                         <ProfileDescription />
