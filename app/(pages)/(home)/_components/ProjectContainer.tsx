@@ -1,7 +1,7 @@
-import { Badge } from '@/app/_components/Badge';
 import { Project } from '@/app/data/utilts';
 import Image from 'next/image';
 import { FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
+import Badge from './Badge';
 import ProjectLink from './ProjectLink';
 
 const ProjectContainer = ({ project }: { project: Project }) => {

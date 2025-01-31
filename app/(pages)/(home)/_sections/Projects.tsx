@@ -1,18 +1,10 @@
 import { projects } from '@/app/data/utilts';
-import Image from 'next/image';
 import Heading from '../_components/Heading';
 import ProjectContainer from '../_components/ProjectContainer';
 
 const Projects = () => {
     return (
         <section className="scroll-mt-[10rem] bg-white" id="projects">
-            <Image
-                src="/pictures/side_gradient.webp"
-                width={500}
-                height={145}
-                className="absolute right-0 z-20 w-[90rem] opacity-80"
-                alt="tailwind effect"
-            />
             <div className="container relative z-40 w-full max-w-[120rem] px-[3rem] py-[4.8rem] lg:px-[6rem]">
                 <div className="mx-auto w-11/12">
                     <Heading>PROJECTS</Heading>

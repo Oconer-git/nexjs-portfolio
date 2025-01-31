@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useCallback } from 'react';
 import { FaFileAlt } from 'react-icons/fa';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { resumeLink } from '../data/resumeLink';
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -22,7 +23,7 @@ const HamburgerDropdown = () => {
             <DropdownMenuTrigger>
                 <RxHamburgerMenu className="text-[3rem]" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="relative right-[2rem] flex flex-col rounded-md bg-gray-100 text-[1.6rem] !leading-[1.95rem] text-text/60 shadow-md drop-shadow-sm lg:hidden">
+            <DropdownMenuContent className="relative right-[3rem] flex flex-col rounded-md bg-gray-100 text-[1.6rem] !leading-[1.95rem] text-text/60 shadow-md drop-shadow-sm lg:hidden">
                 {bookmarkLinks.map((bookmark) => (
                     <DropdownMenuItem
                         key={bookmark.id}
@@ -38,7 +39,7 @@ const HamburgerDropdown = () => {
                 <div className="p-[1.6rem]">
                     <Link
                         target="_blank"
-                        href={'https://oconer-git.github.io/resume/'}
+                        href={resumeLink}
                         className="flex flex-row items-center justify-center gap-[0.5rem] rounded-[0.5rem] bg-gradient-to-br from-blue-600 to-cyan-600 p-[0.4rem] py-[1.4rem] text-[1.6rem] !text-white drop-shadow-md hover:scale-95 hover:bg-orange-800 md:text-[1.4rem]"
                     >
                         <FaFileAlt className="h-[1.5rem] w-[1.5rem]" />

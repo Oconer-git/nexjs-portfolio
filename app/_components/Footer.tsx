@@ -11,7 +11,7 @@ const Footer = () => {
             {/* gradient overlay */}
             <div className="container w-full max-w-[120rem] px-[3rem] pb-[4.8rem] pt-[5.3rem] lg:px-[6rem]">
                 {/* socials */}
-                <div className="flex flex-row items-center justify-between gap-[1rem]">
+                <div className="flex flex-col justify-between gap-[2rem] sm:flex-row sm:items-center sm:gap-[1rem]">
                     <section>
                         <h2
                             className={`${merienda.className} bg-gradient-to-br from-blue-300 via-cyan-400 to-purple-500 bg-clip-text text-[2.2rem] font-bold text-transparent drop-shadow-sm sm:text-[3rem] md:text-[3.4rem] lg:text-[3.8rem]`}
@@ -25,7 +25,7 @@ const Footer = () => {
                     </section>
                     <SocialLinks />
                 </div>
-                <p className="p-2 text-right text-blue-300 md:text-[1.4rem]">
+                <p className="p-2 text-blue-300 sm:text-right md:text-[1.4rem]">
                     © 2025 All rights reserved
                 </p>
             </div>

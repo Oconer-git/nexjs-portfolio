@@ -48,7 +48,7 @@ const ContactOptions = () => {
 const SendMeAnEmail = () => {
     return (
         <div className="flex h-[12rem] basis-1/2 flex-col items-center justify-center rounded-[0.8rem] border-2 border-white px-[1rem] py-[2rem] text-center ease-in-out hover:bg-gray-900/90">
-            <p className="mb-[0.5rem] text-[1.2rem] font-[500] sm:text-[1.8rem] md:text-[2rem]">
+            <p className="mb-[0.5rem] text-[1rem] font-[500] sm:text-[1.8rem] md:text-[2rem]">
                 Send me an email <MdEmail className="inline align-middle" />
             </p>
             <CopyButton>oconer@fellowdevs.io</CopyButton>
@@ -56,7 +56,7 @@ const SendMeAnEmail = () => {
                 click to copy this email{' '}
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="inline w-[2rem] fill-current align-middle text-gray-100"
+                    className="inline w-[1.4rem] fill-current align-middle text-gray-100 sm:w-[2rem]"
                     viewBox="0 -960 960 960"
                 >
                     <path d="M551-80 406-392 240-160v-720l560 440H516l144 309-109 51Z"></path>
@@ -69,7 +69,7 @@ const SendMeAnEmail = () => {
 const SendMeAMessage = () => {
     return (
         <div className="flex h-[12rem] basis-1/2 flex-col items-center justify-center rounded-[0.8rem] border-2 border-white px-[1rem] py-[2rem] text-center ease-in-out hover:bg-gray-900/90">
-            <p className="mb-[0.5rem] text-[1.2rem] font-[500] sm:text-[1.8rem] md:text-[2rem] lg:text-[1.8rem]">
+            <p className="mb-[0.5rem] text-[1rem] font-[500] sm:text-[1.8rem] md:text-[2rem] lg:text-[1.8rem]">
                 Send me a message
                 <RiMessage2Fill className="ml-2 inline align-middle" />
             </p>
@@ -78,7 +78,7 @@ const SendMeAMessage = () => {
                 click to open form
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="inline w-[2rem] fill-current align-middle text-gray-100"
+                    className="inline w-[1.4rem] fill-current align-middle text-gray-100 sm:w-[2rem]"
                     viewBox="0 -960 960 960"
                 >
                     <path d="M551-80 406-392 240-160v-720l560 440H516l144 309-109 51Z"></path>

@@ -113,7 +113,7 @@ const CardItem = ({ skill }: { skill: Skill }) => {
             className={`${skill.bgClassname} ${raleway.className} mx-auto h-[29.4rem] w-10/12 rounded-[0.7rem] bg-cover`}
         >
             <div className="h-full w-full rounded-[0.7rem] bg-black/50 p-[2rem] text-white">
-                <h3 className="text-[2.6rem]/[2.6rem] font-light md:text-[2.9rem]/[3.3rem] lg:text-[2.8rem]/[3.2rem]">
+                <h3 className="text-[2.2rem]/[2.2rem] font-light md:text-[2.9rem]/[3.3rem] lg:text-[2.8rem]/[3.2rem]">
                     {skill.name}
                 </h3>
                 <p className="mt-[1rem] text-[1.4rem]/[1.6rem] font-[200] md:text-[1.8rem]/[2.2rem] lg:text-[1.6rem]/[1.9rem]">

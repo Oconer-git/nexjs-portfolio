@@ -11,10 +11,10 @@ const Hero = () => {
                     src="/pictures/tailwind_effect.png"
                     width={500}
                     height={145}
-                    className="absolute top-0 z-40 w-full md:opacity-90"
+                    className="absolute top-0 z-40 w-1/2 sm:w-full md:opacity-90"
                     alt="tailwind effect"
                 />
-                <div className="container flex h-screen w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[14.8rem] md:h-[64rem]">
+                <div className="container flex h-screen w-full max-w-[120rem] flex-col px-[3rem] pb-[4.8rem] pt-[18rem] sm:pt-[14.8rem]">
                     <InitialPopUpContainer>
                         <Profile />
                         <ProfileDescription />
@@ -33,11 +33,11 @@ const Profile = () => {
                 src="/pictures/donell_transparent.png"
                 width={499}
                 height={499}
-                className="relative z-40 mx-auto h-[13.7rem] w-[13.7rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm lg:h-[15rem] lg:w-[15rem] xl:h-[15.5rem] xl:w-[15.5rem]"
+                className="relative z-40 mx-auto h-[10rem] w-[10rem] rounded-full border-[0.1rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 shadow-sm sm:h-[13.7rem] sm:w-[13.7rem] md:h-[15rem] md:w-[15rem] xl:h-[15.5rem] xl:w-[15.5rem]"
                 alt="profile"
             />
             <h1
-                className={`${merienda.className} mt-[2rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 bg-clip-text text-center text-[4.4rem]/[4.4rem] font-extrabold text-highlight text-transparent sm:text-[5rem]/[5rem] lg:text-[5.2rem]/[5.2rem] xl:text-[5.5rem]`}
+                className={`${merienda.className} mt-[2rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 bg-clip-text text-center text-[4rem]/[4rem] font-extrabold text-highlight text-transparent sm:text-[5rem]/[5rem] md:text-[5.2rem]/[5.2rem] xl:text-[5.5rem]`}
             >
                 Hi, I&apos;m Donell Oconer.
             </h1>
