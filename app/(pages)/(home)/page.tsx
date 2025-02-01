@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Toaster } from 'react-hot-toast';
 import AboutMe from './_sections/AboutMe';
+import FAQ from './_sections/FAQ';
 import GetInTouch from './_sections/GetInTouch';
 import Hero from './_sections/Hero';
 import Projects from './_sections/Projects';
@@ -41,6 +42,7 @@ const Home = () => {
             <Projects />
             <WhatIBring />
             <GetInTouch />
+            <FAQ />
             <Toaster
                 position="top-center"
                 reverseOrder={false}

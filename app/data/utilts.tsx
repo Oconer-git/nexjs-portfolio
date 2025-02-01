@@ -415,3 +415,41 @@ export const tools: Tech[] = [
         imageSrc: 'svgs/others/hostinger.svg'
     }
 ];
+
+export const bookmarkLinks = [
+    {
+        id: 1,
+        name: 'About me',
+        href: 'about-me'
+    },
+    {
+        id: 2,
+        name: 'Tech Stack',
+        href: 'tech-stack'
+    },
+    {
+        id: 3,
+        name: 'Projects',
+        href: 'projects'
+    },
+    {
+        id: 4,
+        name: 'Skills',
+        href: 'skills'
+    },
+    {
+        id: 5,
+        name: 'Contact',
+        href: 'contact'
+    },
+    {
+        id: 6,
+        name: 'FAQ',
+        href: 'faq'
+    },
+    {
+        id: 7,
+        name: 'Socials',
+        href: 'socials'
+    }
+];

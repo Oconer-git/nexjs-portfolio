@@ -6,6 +6,7 @@ import { FaMapLocation, FaPhone } from 'react-icons/fa6';
 import useBookmark from '../_hooks/useBookmark';
 import useScroll from '../_hooks/useScroll';
 import { cpNumber, currentAddress, resumeLink } from '../data/info';
+import { bookmarkLinks } from '../data/utilts';
 import HamburgerDropdown from './HambergerDropdown';
 
 const Navbar = () => {
@@ -22,22 +23,20 @@ const Navbar = () => {
             <div className="container flex w-full max-w-[120rem] flex-row items-center justify-between px-[3rem] py-[1rem] lg:px-[6rem]">
                 <Logo />
                 <nav
-                    className={`${scrolled ? 'text-white' : 'text-slate-700'} flex flex-row items-center gap-[2rem]`}
+                    className={`${scrolled ? 'text-white' : 'text-slate-700'} flex flex-row items-center gap-[0.5rem]`}
                 >
                     <BookmarkNav />
-                    <div className="flex flex-col text-[1rem] sm:flex-row sm:gap-[2rem] sm:text-[1.3rem] md:text-[1.6rem]">
-                        <PhoneNumber />
-                        <Address />
-                    </div>
+                    <ContactInfo />
+                    {/* resume */}
                     <Link
                         target="_blank"
                         href={resumeLink}
-                        className={`${scrolled ? 'bg-orange-600' : 'bg-gradient-to-br from-blue-600 to-cyan-600'} hidden flex-row items-center gap-[0.5rem] rounded-[0.5rem] p-[0.4rem] text-[1.2rem] text-gray-100 drop-shadow-md hover:scale-95 hover:bg-orange-800 md:flex md:text-[1.4rem]`}
+                        className={`${scrolled ? 'bg-orange-600' : 'bg-gradient-to-br from-blue-600 to-cyan-600'} hidden flex-row items-center gap-[0.5rem] rounded-[0.5rem] p-[0.4rem] text-[1.2rem] text-gray-100 drop-shadow-md hover:scale-95 hover:bg-orange-800 md:text-[1.4rem] lg:flex`}
                     >
                         <FaFileAlt className="h-[1.4rem] w-[1.4rem]" />
                         <p>resume</p>
                     </Link>
-                    <div className="block md:hidden">
+                    <div className="block lg:hidden">
                         <HamburgerDropdown />
                     </div>
                 </nav>
@@ -62,7 +61,7 @@ const BookmarkNav = () => {
                 <button
                     key={bookmark.id}
                     onClick={() => handleScroll(bookmark.href)}
-                    className="hidden px-[1rem] text-center text-[1.6rem] hover:text-gray-400 md:block"
+                    className="hidden px-[1rem] text-center text-[1.4rem] hover:text-gray-400 lg:block xl:text-[1.6rem]"
                 >
                     {bookmark.name}
                 </button>
@@ -71,6 +70,14 @@ const BookmarkNav = () => {
     );
 };
 
+const ContactInfo = () => {
+    return (
+        <div className="mr-[1rem] flex flex-col border-l-[0.1rem] border-l-gray-400/50 pl-[1rem] text-[1rem] sm:flex-row sm:gap-[2rem] sm:text-[1.3rem] md:text-[1.4rem]">
+            <PhoneNumber />
+            <Address />
+        </div>
+    );
+};
 const PhoneNumber = () => {
     return (
         <div className="flex flex-row items-center">
@@ -88,28 +95,5 @@ const Address = () => {
         </div>
     );
 };
-
-export const bookmarkLinks = [
-    {
-        id: 1,
-        name: 'About me',
-        href: 'about-me'
-    },
-    {
-        id: 2,
-        name: 'Tech Stack',
-        href: 'tech-stack'
-    },
-    {
-        id: 3,
-        name: 'Contact',
-        href: 'contact'
-    },
-    {
-        id: 4,
-        name: 'Socials',
-        href: 'socials'
-    }
-];
 
 export default Navbar;

@@ -3,13 +3,14 @@ import { useCallback } from 'react';
 import { FaFileAlt } from 'react-icons/fa';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { resumeLink } from '../data/info';
+import { bookmarkLinks } from '../data/utilts';
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger
 } from './Dropdown';
-import { bookmarkLinks } from './Navbar';
+
 const HamburgerDropdown = () => {
     const handleScroll = useCallback((id: string) => {
         const element = document.getElementById(id);
@@ -23,7 +24,7 @@ const HamburgerDropdown = () => {
             <DropdownMenuTrigger>
                 <RxHamburgerMenu className="text-[3rem]" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="relative right-[3rem] flex flex-col rounded-md bg-gray-100 text-[1.6rem] !leading-[1.95rem] text-text/60 shadow-md drop-shadow-sm lg:hidden">
+            <DropdownMenuContent className="relative right-[3rem] flex flex-col rounded-md bg-gray-100 text-[1.6rem] !leading-[1.95rem] text-text/60 shadow-md drop-shadow-sm">
                 {bookmarkLinks.map((bookmark) => (
                     <DropdownMenuItem
                         key={bookmark.id}

@@ -26,11 +26,13 @@ export default {
                 grid: `
                 linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px)
-              `
+              `,
+                dots: 'radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px)' // 50% opacity (0.1)
             },
             backgroundSize: {
                 gridSize20: '20px 20px',
-                gridSize40: '40px 40px' // Adjust this value for grid spacing
+                gridSize40: '40px 40px', // Adjust this value for grid spacing
+                dotsSize16: '16px 16px' // Adjust spacing if needed
             },
             colors: {
                 whitesmoke: '#f7f6f6',
@@ -75,6 +77,20 @@ export default {
                 lg: `var(--radius)`,
                 md: `calc(var(--radius) - 2px)`,
                 sm: `calc(var(--radius) - 4px)`
+            },
+            keyframes: {
+                'accordion-down': {
+                    from: { height: '0' },
+                    to: { height: 'var(--radix-accordion-content-height)' }
+                },
+                'accordion-up': {
+                    from: { height: 'var(--radix-accordion-content-height)' },
+                    to: { height: '0' }
+                }
+            },
+            animation: {
+                'accordion-down': 'accordion-down 0.2s ease-out',
+                'accordion-up': 'accordion-up 0.2s ease-out'
             }
         }
     },
