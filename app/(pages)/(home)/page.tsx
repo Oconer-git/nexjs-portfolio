@@ -41,32 +41,26 @@ const Home = () => {
             <Projects />
             <WhatIBring />
             <GetInTouch />
-            <Toast />
-        </>
-    );
-};
-
-export const Toast = () => {
-    return (
-        <Toaster
-            position="top-center"
-            reverseOrder={false}
-            gutter={8}
-            containerClassName=""
-            containerStyle={{}}
-            toastOptions={{
-                className: 'text-[1.4rem] rounded-[0.3rem]',
-                duration: 5000,
-                removeDelay: 1000,
-                success: {
-                    duration: 3000,
-                    iconTheme: {
-                        primary: 'green',
-                        secondary: 'black'
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+                gutter={8}
+                containerClassName=""
+                containerStyle={{}}
+                toastOptions={{
+                    className: 'text-[1.4rem] rounded-[0.3rem]',
+                    duration: 5000,
+                    removeDelay: 1000,
+                    success: {
+                        duration: 3000,
+                        iconTheme: {
+                            primary: 'green',
+                            secondary: 'black'
+                        }
                     }
-                }
-            }}
-        />
+                }}
+            />{' '}
+        </>
     );
 };
 
