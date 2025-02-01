@@ -38,9 +38,9 @@ const Header = () => {
 
 const ContactOptions = () => {
     return (
-        <div className="mx-auto flex w-full flex-row items-center gap-[1rem] text-[1.4rem] text-gray-100 md:w-9/12 lg:w-full lg:basis-1/2">
+        <div className="mx-auto flex w-full flex-col items-center gap-[1rem] text-[1.4rem] text-gray-100 sm:flex-row md:w-9/12 lg:w-full lg:basis-1/2">
             <SendMeAnEmail />
-            <p className="hidden sm:block">or</p>
+            <p>or</p>
             <SendMeAMessage />
         </div>
     );
@@ -48,8 +48,8 @@ const ContactOptions = () => {
 
 const SendMeAnEmail = () => {
     return (
-        <div className="flex h-[12rem] basis-1/2 flex-col items-center justify-center rounded-[0.8rem] border-2 border-white px-[1rem] py-[2rem] text-center ease-in-out hover:bg-gray-900/90">
-            <p className="mb-[0.5rem] text-[1.4rem] font-[500] sm:text-[1.8rem] md:text-[2rem]">
+        <div className="flex h-[12rem] w-full basis-full flex-col items-center justify-center rounded-[0.8rem] border-2 border-white px-[1rem] py-[1rem] text-center ease-in-out hover:bg-gray-900/90 sm:basis-1/2 sm:py-[2rem]">
+            <p className="mb-[0.5rem] text-[2rem] font-[500] sm:text-[1.8rem] md:text-[2rem]">
                 Send me an email <MdEmail className="inline align-middle" />
             </p>
             <CopyButton>{email}</CopyButton>
@@ -69,8 +69,8 @@ const SendMeAnEmail = () => {
 
 const SendMeAMessage = () => {
     return (
-        <div className="flex h-[12rem] basis-1/2 flex-col items-center justify-center rounded-[0.8rem] border-2 border-white px-[1rem] py-[2rem] text-center ease-in-out hover:bg-gray-900/90">
-            <p className="mb-[0.5rem] text-[1.2rem] font-[500] sm:text-[1.8rem] md:text-[2rem] lg:text-[1.8rem]">
+        <div className="flex h-[12rem] w-full basis-full flex-col items-center justify-center rounded-[0.8rem] border-2 border-white px-[1rem] py-[1rem] text-center ease-in-out hover:bg-gray-900/90 sm:basis-1/2 sm:py-[2rem]">
+            <p className="mb-[0.5rem] text-[2rem] font-[500] sm:text-[1.8rem] md:text-[2rem] lg:text-[1.8rem]">
                 Send me a message
                 <RiMessage2Fill className="ml-2 inline align-middle" />
             </p>

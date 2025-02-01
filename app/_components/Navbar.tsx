@@ -2,11 +2,12 @@
 import { merienda } from '@/app/fonts';
 import Link from 'next/link';
 import { FaFileAlt } from 'react-icons/fa';
-import { FaPhone } from 'react-icons/fa6';
+import { FaMapLocation, FaPhone } from 'react-icons/fa6';
 import useBookmark from '../_hooks/useBookmark';
 import useScroll from '../_hooks/useScroll';
-import { resumeLink } from '../data/info';
+import { cpNumber, currentAddress, resumeLink } from '../data/info';
 import HamburgerDropdown from './HambergerDropdown';
+
 const Navbar = () => {
     const scrolled = useScroll(50);
 
@@ -24,7 +25,10 @@ const Navbar = () => {
                     className={`${scrolled ? 'text-white' : 'text-slate-700'} flex flex-row items-center gap-[2rem]`}
                 >
                     <BookmarkNav />
-                    <PhoneNumber />
+                    <div className="flex flex-col text-[1rem] sm:flex-row sm:gap-[2rem] sm:text-[1.3rem] md:text-[1.6rem]">
+                        <PhoneNumber />
+                        <Address />
+                    </div>
                     <Link
                         target="_blank"
                         href={resumeLink}
@@ -69,14 +73,22 @@ const BookmarkNav = () => {
 
 const PhoneNumber = () => {
     return (
-        <div className="flex flex-row items-center text-[1.3rem] md:text-[1.6rem]">
+        <div className="flex flex-row items-center">
             <FaPhone className="mr-[0.5rem] w-[1.4rem]" />
-            <p>
-                0945{'   '}183{'   '}0225
-            </p>
+            <p>{cpNumber}</p>
         </div>
     );
 };
+
+const Address = () => {
+    return (
+        <div className="flex flex-row items-center">
+            <FaMapLocation className="mr-[0.5rem] w-[1.4rem]" />
+            <p>{currentAddress}</p>
+        </div>
+    );
+};
+
 export const bookmarkLinks = [
     {
         id: 1,
