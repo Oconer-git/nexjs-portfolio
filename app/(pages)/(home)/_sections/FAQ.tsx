@@ -9,7 +9,7 @@ import { RiQuestionAnswerFill } from 'react-icons/ri';
 const FAQ = () => {
     return (
         <section
-            className="bg-dots bg-dotsSize16 scroll-mt-[10rem] bg-[#28406d]"
+            className="scroll-mt-[10rem] bg-[#28406d] bg-dots bg-dotsSize16"
             id="faq"
         >
             <div className="container max-w-[120rem] px-[3rem] py-[6.8rem] lg:px-[6rem]">
@@ -45,12 +45,12 @@ const questionAndAnswers = [
         id: 0,
         question:
             'If I hire you, what can I expect in the first six months of working together?',
-        answer: 'In the first six months, my main focus would be on gaining a solid understanding of how your web development team works, how projects are structured, and the coding patterns you follow. I’m all about learning the best practices and tools the company uses, while making sure I give 100% effort to any task I’m assigned. My goal is to contribute, learn, and get up to speed as quickly as possible. If something’s not clear, I’ll definitely ask questions, I want to make sure I’m doing things right. I feel like these are the things a good company is looking for from a junior web developer.'
+        answer: 'In the first six months, my main focus would be on gaining a solid understanding of how your web development team works, how projects are structured, and the coding patterns the company follow. I’m all about learning the best practices and tools the company uses, while making sure I give 100% effort to any task I’m assigned. My goal is to contribute, learn, and get things done as quickly as possible. If something’s not clear, I’ll definitely ask questions, I want to make sure I’m doing things right. I feel like these are the things a good company is looking for from a junior web developer.'
     },
     {
         id: 1,
         question: 'What makes you different from other web developers?',
-        answer: 'So, as a recent grad, one thing I really value is my eagerness to keep learning and improving. I don’t have any industry experience yet, but I’ve been lucky to learn from some great mentors who taught me how to write clean, efficient code and tackle real-world problems using React, Next.js, and CodeIgniter. I also try to bring a bit of creativity to my work, always looking for new ways to approach challenges. And honestly, I’m the type who can sit and code for hours when I’m in the zone... I’m determined to figure things out. I’m just excited to keep growing and contribute to a team that values learning and collaboration. Right now, I would say that I’m just hungry to work with people who care about making things better, even if it means failing a few times first. You know, the kind of team where we high-five over small wins and laugh when the coffee machine breaks?'
+        answer: 'So, as a recent grad, one thing I really value is my eagerness to keep learning and improving. I don’t have any industry experience yet, but I’ve been lucky to learn from some great mentors who taught me how to write clean, efficient code and tackle real-world problems using React, Next.js, and CodeIgniter. I also try to bring a bit of creativity to my work, always looking for new ways to approach challenges. And honestly, I’m the type who can sit and code for hours when I’m in the zone... I’m determined to figure things out.'
     },
     {
         id: 2,
@@ -61,7 +61,7 @@ const questionAndAnswers = [
         id: 3,
         question:
             'How do you approach solving complex problems in web development?',
-        answer: 'When I face a complex problem, I always think about the easiest and most efficient way to solve it because I value both time and energy.  I usually start by breaking it down into smaller, more manageable pieces. I find that it helps to ask questions, search for similar issues online, and read documentation. If I hit a roadblock, I take a short break—it often helps me see the problem from a new angle. Once I have a solution in mind, I test it thoroughly and refine it as needed to ensure it works effectively.'
+        answer: 'When I run into a tough problem, I try to find the simplest and most efficient way to solve it. I usually break it down into smaller pieces to make it more manageable. I’ll also ask questions, look things up online, and check the documentation. If I get stuck, taking a short break usually helps me see things from a fresh angle. Once I have a solution, I test it out and tweak it as needed to make sure it actually works.'
     },
     {
         id: 7,
