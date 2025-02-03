@@ -10,7 +10,7 @@ import WhatIBring from './_sections/WhatIBring';
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://portfolio-oconer.vercel.app/'),
-    title: 'Oconer Portfolio',
+    title: 'Oconer Designs',
     description:
         'Donell Oconer – A fresh graduate with a solid foundation of web development fundamentals, seeking to apply skills and contribute to a development team. Aspiring to become a seasoned developer by being a team player, collaborating with more experienced professionals, handling both large and small-scale projects, solving problems, and continuously learning and adapting to the ever-changing technology in the corporate world.',
     icons: {
