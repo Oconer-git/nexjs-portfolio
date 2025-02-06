@@ -25,8 +25,8 @@ export const metadata: Metadata = {
         images: [
             {
                 url: 'https://portfolio-oconer.vercel.app/pictures/screenshots/meta/hire-me.png',
-                width: 940,
-                height: 788,
+                width: 1200,
+                height: 630,
                 alt: 'Oconer Designs'
             }
         ],
