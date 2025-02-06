@@ -17,19 +17,19 @@ export const metadata: Metadata = {
         icon: '/favicon.ico'
     },
     openGraph: {
-        title: 'Oconer Portfolio',
+        title: 'Hire a front-end developer',
         type: 'website',
         locale: 'en_US',
-        siteName: 'Oconer Dev',
+        siteName: 'Oconer Designs',
         url: 'https://portfolio-oconer.vercel.app/',
         images: {
-            url: '/screenshots/meta/hero.png',
+            url: 'https://portfolio-oconer.vercel.app/screenshots/meta/hero.png',
             width: 1200,
             height: 630,
-            alt: 'Oconer Portfolio'
+            alt: 'Oconer Designs'
         },
         description:
-            'Donell Oconer – A fresh graduate with a solid foundation of web development fundamentals, seeking to apply skills and contribute to a development team. Aspiring to become a seasoned developer by being a team player, collaborating with more experienced professionals, handling both large and small-scale projects, solving problems, and continuously learning and adapting to the ever-changing technology in the corporate world.'
+            'Fresh grad with expertise in React, Next.js, PHP, and modern front-end frameworks. Skilled in building scalable web applications, state management, API integrations, and performance optimization. Proven track record in e-commerce, issue tracking, and social media platforms. Open to opportunities—visit my portfolio: portfolio-oconer.vercel.app.'
     }
 };
 
