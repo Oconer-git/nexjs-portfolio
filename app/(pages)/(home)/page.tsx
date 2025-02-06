@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
 import AboutMe from './_sections/AboutMe';
 import FAQ from './_sections/FAQ';
@@ -25,46 +24,20 @@ export const metadata: Metadata = {
         url: 'https://portfolio-oconer.vercel.app/',
         images: [
             {
-                url: 'https://portfolio-oconer.vercel.app/pictures/screenshots/meta/hero.png',
-                width: 1140,
-                height: 641,
+                url: 'https://portfolio-oconer.vercel.app/pictures/screenshots/meta/hire-me.png',
+                width: 940,
+                height: 788,
                 alt: 'Oconer Designs'
             }
         ],
         description:
-            'Fresh grad with expertise in React, Next.js, PHP, and modern front-end frameworks. Skilled in building scalable web applications, state management, API integrations, and performance optimization. Proven track record in e-commerce, issue tracking, and social media platforms. Open to opportunities—visit my portfolio: portfolio-oconer.vercel.app.'
+            'Hire a developer with expertise in React, Next.js, PHP, and modern front-end frameworks. Skilled in building scalable web applications, state management, API integrations, and performance optimization. Proven track record in e-commerce, issue tracking, and social media platforms. Open to opportunities—visit my portfolio: portfolio-oconer.vercel.app.'
     }
 };
 
 const Home = () => {
     return (
         <>
-            <Head>
-                <title>Oconer Designs</title>
-                <meta
-                    name="description"
-                    content="Donell Oconer – A fresh graduate with a solid foundation in web development..."
-                />
-                <meta
-                    property="og:title"
-                    content="Hire a front-end developer"
-                />
-                <meta
-                    property="og:description"
-                    content="Fresh grad with expertise in React, Next.js, PHP..."
-                />
-                <meta
-                    property="og:image"
-                    content="https://portfolio-oconer.vercel.app/pictures/screenshots/meta/hero.png"
-                />
-                <meta property="og:image:width" content="1140" />
-                <meta property="og:image:height" content="641" />
-                <meta
-                    property="og:url"
-                    content="https://portfolio-oconer.vercel.app/"
-                />
-                <meta property="og:type" content="website" />
-            </Head>
             <Hero />
             <AboutMe />
             <TechStack />
