@@ -12,7 +12,7 @@ const FAQ = () => {
             className="scroll-mt-[10rem] bg-[#28406d] bg-dots bg-dotsSize16"
             id="faq"
         >
-            <div className="container max-w-[120rem] px-[3rem] py-[6.8rem] lg:px-[6rem]">
+            <div className="container max-w-[120rem] px-[3rem] py-[6.8rem] lg:px-[6rem] 2xl:max-w-[140rem]">
                 <h2 className="text-[2.8rem] font-bold text-gray-50 sm:text-[3rem] md:text-[3.4rem] lg:text-[3.8rem]">
                     Frequently Asked Questions
                     <RiQuestionAnswerFill className="ml-[1rem] inline align-middle text-gray-100/20" />

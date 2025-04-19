@@ -20,7 +20,7 @@ const Navbar = () => {
                     : 'bg-gray-50/90 drop-shadow-sm'
             } fixed top-0 z-50 w-full`}
         >
-            <div className="container flex w-full max-w-[120rem] flex-row items-center justify-between px-[3rem] py-[1rem] lg:px-[6rem]">
+            <div className="container flex w-full max-w-[120rem] flex-row items-center justify-between px-[3rem] py-[1rem] lg:px-[6rem] 2xl:max-w-[140rem]">
                 <Logo />
                 <nav
                     className={`${scrolled ? 'text-white' : 'text-slate-700'} flex flex-row items-center gap-[0.5rem]`}

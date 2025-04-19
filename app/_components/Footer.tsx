@@ -9,7 +9,7 @@ const Footer = () => {
             className="bg-gradient-to-r from-stone-800 to-slate-900 text-white"
         >
             {/* gradient overlay */}
-            <div className="container w-full max-w-[120rem] px-[3rem] pb-[4.8rem] pt-[5.3rem] lg:px-[6rem]">
+            <div className="container w-full max-w-[120rem] px-[3rem] pb-[4.8rem] pt-[5.3rem] lg:px-[6rem] 2xl:max-w-[140rem]">
                 {/* socials */}
                 <div className="flex flex-col justify-between gap-[2rem] sm:flex-row sm:items-center sm:gap-[1rem]">
                     <section>

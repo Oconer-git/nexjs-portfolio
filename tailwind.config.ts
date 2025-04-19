@@ -21,7 +21,7 @@ export default {
                 wallpaper6: "url('/pictures/wallpapers/2.2.png')",
                 wallpaper7: "url('/pictures/wallpapers/2.1.png')",
                 wallpaper8: "url('/pictures/wallpapers/8.jpg')",
-                wallpaper9: "url('/pictures/wallpapers/9.jpg')",
+            wallpaper9: "url('/pictures/wallpapers/9.jpg')",
                 hero: "url('/pictures/wallpapers/sunset building.jpg')",
                 grid: `
                 linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),

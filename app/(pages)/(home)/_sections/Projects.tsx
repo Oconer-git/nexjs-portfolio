@@ -5,7 +5,7 @@ import ProjectContainer from '../_components/ProjectContainer';
 const Projects = () => {
     return (
         <section className="scroll-mt-[10rem] bg-white" id="projects">
-            <div className="container relative z-40 w-full max-w-[120rem] px-[3rem] py-[4.8rem] lg:px-[6rem]">
+            <div className="container relative z-40 w-full max-w-[120rem] px-[3rem] py-[4.8rem] lg:px-[6rem] 2xl:max-w-[140rem]">
                 <div className="mx-auto w-11/12">
                     <Heading>PROJECTS</Heading>
                     <p className="text-center text-[1.4rem]/[2.4rem] text-highlight sm:text-[1.6rem]/[2.4rem] lg:text-[1.8rem]/[2.6rem]">

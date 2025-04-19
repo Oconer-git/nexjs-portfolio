@@ -10,7 +10,7 @@ const TechStack = () => {
             id="tech-stack"
             className="scroll-mt-[10rem] bg-whitesmoke bg-grid bg-gridSize20"
         >
-            <div className="container relative z-30 w-full max-w-[120rem] px-[3rem] pb-[5.1rem] pt-[5rem] lg:px-[6rem]">
+            <div className="container relative z-30 w-full max-w-[120rem] px-[3rem] pb-[5.1rem] pt-[5rem] lg:px-[6rem] 2xl:max-w-[140rem]">
                 <Heading>TECH STACK</Heading>
                 <MainTechs />
                 <OtherTools />

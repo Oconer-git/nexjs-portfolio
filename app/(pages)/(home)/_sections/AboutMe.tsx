@@ -5,7 +5,7 @@ import Heading from '../_components/Heading';
 const AboutMe = () => {
     return (
         <section id="about-me" className="scroll-mt-[10rem] border-y-[0.1rem]">
-            <div className="container flex w-full max-w-[120rem] flex-col gap-[1.6rem] px-[3rem] py-[4.8rem] lg:px-[6rem] xl:px-[12rem]">
+            <div className="container flex w-full max-w-[120rem] flex-col gap-[1.6rem] px-[3rem] py-[4.8rem] lg:px-[6rem] xl:px-[12rem] 2xl:max-w-[140rem]">
                 <About />
                 <EducationHistory />
             </div>

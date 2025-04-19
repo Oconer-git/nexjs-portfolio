@@ -12,7 +12,7 @@ const GetInTouch = () => {
             className="scroll-mt-[10rem] bg-gradient-to-br from-blue-400 via-cyan-500 to-purple-600"
         >
             <div className="relative top-0 z-20 w-full bg-gray-900/40 text-white">
-                <div className="container relative z-30 flex w-full max-w-[120rem] flex-col gap-[2rem] px-[3rem] py-[5.3rem] lg:flex-row lg:justify-between lg:gap-[3rem] lg:px-[6rem]">
+                <div className="container relative z-30 flex w-full max-w-[120rem] flex-col gap-[2rem] px-[3rem] py-[5.3rem] lg:flex-row lg:justify-between lg:gap-[3rem] lg:px-[6rem] 2xl:max-w-[140rem]">
                     <Header />
                     <ContactOptions />
                 </div>

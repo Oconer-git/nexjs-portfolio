@@ -324,66 +324,71 @@ export const techs: Tech[] = [
     },
     {
         id: 2,
+        name: 'Vue',
+        imageSrc: '/svgs/vue.svg'
+    },
+    {
+        id: 3,
+        name: 'Nuxt.js',
+        imageSrc: '/svgs/nuxt.svg'
+    },
+    {
+        id: 4,
         name: 'Laravel',
         imageSrc: '/svgs/laravel.svg'
     },
     {
-        id: 3,
+        id: 5,
         name: 'CodeIgniter',
         imageSrc: '/svgs/code_igniter.svg'
     },
     {
-        id: 4,
+        id: 6,
         name: 'HTML',
         imageSrc: '/svgs/html.svg'
     },
     {
-        id: 5,
+        id: 7,
         name: 'CSS',
         imageSrc: '/svgs/css.svg'
     },
     {
-        id: 6,
+        id: 8,
         name: 'Javascript',
         imageSrc: '/svgs/js.svg'
     },
     {
-        id: 7,
+        id: 9,
         name: 'Typescript',
         imageSrc: '/svgs/typescript.svg'
     },
     {
-        id: 8,
+        id: 10,
         name: 'PHP',
         imageSrc: '/svgs/php.svg'
     },
     {
-        id: 9,
+        id: 11,
         name: 'MySQL',
         imageSrc: '/svgs/mysql.svg'
     },
     {
-        id: 10,
+        id: 12,
         name: 'Tailwind',
         imageSrc: '/svgs/tailwind.svg'
     },
     {
-        id: 11,
+        id: 13,
         name: 'Livewire',
         imageSrc: '/svgs/livewire.svg'
     },
     {
-        id: 12,
+        id: 14,
         name: 'Jquery',
         imageSrc: '/svgs/jquery.svg'
     },
     {
-        id: 13,
-        name: 'Postgresql',
-        imageSrc: '/svgs/postgresql.svg'
-    },
-    {
-        id: 14,
+        id: 15,
         name: 'Wordpress',
         imageSrc: '/svgs/wordpress.svg'
     }

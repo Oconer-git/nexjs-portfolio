@@ -18,7 +18,7 @@ const WhatIBring = () => {
             id="skills"
             className="scroll-mt-[10rem] border-b-[0.1rem] border-t border-[0.2] border-b-gray-300 bg-gradient-to-br from-slate-50 via-white to-slate-300"
         >
-            <div className="container w-full max-w-[120rem] px-[3rem] pb-[5.1rem] pt-[4.8rem] lg:px-[6rem]">
+            <div className="container w-full max-w-[120rem] px-[3rem] pb-[5.1rem] pt-[4.8rem] lg:px-[6rem] 2xl:max-w-[140rem]">
                 <h2
                     className={`${merienda.className} mt-[2rem] bg-gradient-to-br from-blue-700 via-cyan-800 to-purple-900 bg-clip-text text-center text-[2.5rem]/[3.5rem] font-extrabold text-highlight text-transparent sm:text-[3.2rem]/[4.8rem] lg:text-[3.8rem]/[5.4rem]`}
                 >
