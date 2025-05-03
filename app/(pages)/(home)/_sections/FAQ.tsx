@@ -42,14 +42,9 @@ const FAQ = () => {
 
 const questionAndAnswers = [
     {
-        id: 0,
-        question: 'If I hire you, what can I expect in the first six months?',
-        answer: 'In the first six months, my main focus would be on gaining a solid understanding of how your web development team works, how projects are structured, and the coding patterns the company follow. I’m all about learning the best practices and tools the company uses, while making sure I give 100% effort to any task I’m assigned. My goal is to contribute, learn, and get things done as quickly as possible. If something’s not clear, I’ll definitely ask questions, I want to make sure I’m doing things right. I feel like these are the things a good company is looking for from a junior web developer.'
-    },
-    {
         id: 1,
         question: 'What makes you different from other web developers?',
-        answer: 'So, as a recent grad, one thing I really value is my eagerness to keep learning and improving. I don’t have any industry experience yet, but I’ve been lucky to learn from some great mentors who taught me how to write clean, efficient code and tackle real-world problems using React, Next.js, and CodeIgniter. I also try to bring a bit of creativity to my work, always looking for new ways to approach challenges. And honestly, I’m the type who can sit and code for hours when I’m in the zone... I’m determined to figure things out.'
+        answer: 'One thing I really value is my eagerness to keep learning and improving. I’ve been lucky to learn from some great mentors who taught me how to write clean, efficient code and tackle real-world problems using React, Next.js, Vue, Nuxt, Laravel and many more. I also try to bring a bit of creativity to my work, always looking for new ways to approach challenges.'
     },
     {
         id: 2,
