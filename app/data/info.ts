@@ -1,5 +1,5 @@
 export const resumeLink =
-    'https://drive.google.com/file/d/1Mur7AQwKfNtGAqPoh-Z3qeYIMvrxhwVv/view?usp=sharing';
+    'https://drive.google.com/file/d/12eUp-yVnfLehHWJrVo1tvIDJRwTPnUFk/view?usp=sharing';
 
 export const email = 'oconerdoncarl@gmail.com';
 
